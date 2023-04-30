@@ -1,0 +1,29 @@
+/* styles.css */
+@keyframes flipIn {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  @keyframes flipOut {
+    0% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .rotate-y-in {
+    @apply transition-transform duration-700 ease-in-out;
+    animation: flipIn 0.7s forwards;
+  }
+  
+  .rotate-y-out {
+    @apply transition-transform duration-700 ease-in-out;
+    animation: flipOut 0.7s forwards;
+  }
+  
